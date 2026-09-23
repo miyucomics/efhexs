@@ -2,7 +2,7 @@ package miyucomics.efhexs.mixin;
 
 import com.llamalad7.mixinextras.injector.wrapmethod.WrapMethod;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
-import miyucomics.efhexs.c2s.ClientState;
+import miyucomics.efhexs.ClientState;
 import net.minecraft.client.particle.Particle;
 import net.minecraft.client.particle.ParticleManager;
 import net.minecraft.particle.ParticleEffect;

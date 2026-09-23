@@ -1,7 +1,8 @@
-package miyucomics.efhexs.c2s
+package miyucomics.efhexs
 
 import it.unimi.dsi.fastutil.longs.Long2ObjectOpenHashMap
-import miyucomics.efhexs.EfhexsMain
+import miyucomics.efhexs.c2s.ParticleC2S
+import miyucomics.efhexs.c2s.SoundC2S
 import miyucomics.efhexs.misc.RingBuffer
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs

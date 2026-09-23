@@ -1,6 +1,5 @@
 package miyucomics.efhexs
 
-import miyucomics.efhexs.c2s.ClientState
 import net.fabricmc.api.ClientModInitializer
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents
 

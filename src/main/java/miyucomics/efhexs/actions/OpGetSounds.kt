@@ -6,7 +6,6 @@ import at.petrak.hexcasting.api.casting.eval.CastingEnvironment
 import at.petrak.hexcasting.api.casting.iota.Iota
 import at.petrak.hexcasting.api.casting.mishaps.MishapBadCaster
 import miyucomics.efhexs.misc.PlayerEntityMinterface
-import miyucomics.hexpose.iotas.IdentifierIota
 import net.minecraft.entity.player.PlayerEntity
 
 object OpGetSounds : ConstMediaAction {
@@ -15,6 +14,6 @@ object OpGetSounds : ConstMediaAction {
 		if (env.castingEntity !is PlayerEntity)
 			throw MishapBadCaster()
 		val caster = env.castingEntity as PlayerEntityMinterface
-		return caster.getSounds().buffer().map(::IdentifierIota).asActionResult
+		return caster.getSounds().map(::IdentifierIota).asActionResult
 	}
 }

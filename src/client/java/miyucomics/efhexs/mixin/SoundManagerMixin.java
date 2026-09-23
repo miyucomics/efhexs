@@ -1,6 +1,6 @@
 package miyucomics.efhexs.mixin;
 
-import miyucomics.efhexs.c2s.ClientState;
+import miyucomics.efhexs.ClientState;
 import net.minecraft.client.sound.SoundInstance;
 import net.minecraft.client.sound.SoundManager;
 import org.spongepowered.asm.mixin.Mixin;

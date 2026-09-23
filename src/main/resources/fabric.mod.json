@@ -3,7 +3,7 @@
 	"id": "efhexs",
 	"version": "${version}",
 	"name": "Special Efhexs",
-	"description": "A Hexcasting addon about recording and playing back particles and sounds.",
+	"description": "A Hexcasting addon about recording, playing back, and manipulating particles and sounds!",
 	"authors": [
 		"miyucomics"
 	],

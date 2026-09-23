@@ -14,6 +14,16 @@ base {
 }
 
 loom {
+	splitEnvironmentSourceSets()
+
+	mods {
+		"efhexs" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+
+
 	accessWidenerPath = file("src/main/resources/efhexs.accesswidener")
 }
 
