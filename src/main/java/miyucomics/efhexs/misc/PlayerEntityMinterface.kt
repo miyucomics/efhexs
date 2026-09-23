@@ -1,9 +1,9 @@
 package miyucomics.efhexs.misc
 
-import miyucomics.hexpose.utils.RingBuffer
-import net.minecraft.util.Identifier
+import miyucomics.efhexs.c2s.ParticleC2S
+import miyucomics.efhexs.c2s.SoundC2S
 
 interface PlayerEntityMinterface {
-	fun getParticles(): RingBuffer<Identifier>
-	fun getSounds(): RingBuffer<Identifier>
+	fun getParticles(): ArrayList<ParticleC2S>
+	fun getSounds(): ArrayList<SoundC2S>
 }

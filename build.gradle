@@ -13,6 +13,10 @@ base {
 	archivesName = archives_base_name
 }
 
+loom {
+	accessWidenerPath = file("src/main/resources/efhexs.accesswidener")
+}
+
 repositories {
     maven { url = "https://maven.blamejared.com/" }
     maven { url = "https://maven.ladysnake.org/releases" }
@@ -28,7 +32,6 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:$fabric_api_version"
 	modImplementation "net.fabricmc:fabric-language-kotlin:$fabric_kotlin_version"
 
-	modImplementation "miyucomics.hexpose:hexpose:$hexpose_version"
 	modImplementation("at.petra-k.hexcasting:hexcasting-fabric-$minecraft_version:$hexcasting_version") {
 		exclude module: "phosphor"
 		exclude module: "lithium"

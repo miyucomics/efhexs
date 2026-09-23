@@ -28,6 +28,7 @@
 			}
 		]
 	},
+	"accessWidener" : "efhexs.accesswidener",
 	"mixins": [
 		"efhexs.mixins.json"
 	],

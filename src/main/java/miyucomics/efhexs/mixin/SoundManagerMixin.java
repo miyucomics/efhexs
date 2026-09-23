@@ -1,6 +1,6 @@
 package miyucomics.efhexs.mixin;
 
-import miyucomics.efhexs.misc.ClientInterface;
+import miyucomics.efhexs.c2s.ClientState;
 import net.minecraft.client.sound.SoundInstance;
 import net.minecraft.client.sound.SoundManager;
 import org.spongepowered.asm.mixin.Mixin;
@@ -12,11 +12,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class SoundManagerMixin {
 	@Inject(method = "play(Lnet/minecraft/client/sound/SoundInstance;)V", at = @At("HEAD"))
 	private void catchSound(SoundInstance soundInstance, CallbackInfo ci) {
-		ClientInterface.pushSound(soundInstance);
+		ClientState.pushSound(soundInstance);
 	}
 
 	@Inject(method = "play(Lnet/minecraft/client/sound/SoundInstance;I)V", at = @At("HEAD"))
 	private void catchSound(SoundInstance soundInstance, int i, CallbackInfo ci) {
-		ClientInterface.pushSound(soundInstance);
+		ClientState.pushSound(soundInstance);
 	}
 }

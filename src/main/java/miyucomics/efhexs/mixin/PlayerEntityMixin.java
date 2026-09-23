@@ -1,7 +1,7 @@
 package miyucomics.efhexs.mixin;
 
 import miyucomics.efhexs.misc.PlayerEntityMinterface;
-import miyucomics.hexpose.utils.RingBuffer;
+import miyucomics.efhexs.misc.RingBuffer;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.NotNull;
