@@ -5,7 +5,7 @@ import at.petrak.hexcasting.api.casting.castables.ConstMediaAction
 import at.petrak.hexcasting.api.casting.eval.CastingEnvironment
 import at.petrak.hexcasting.api.casting.iota.Iota
 import at.petrak.hexcasting.api.casting.mishaps.MishapBadCaster
-import miyucomics.efhexs.SoundIota
+import miyucomics.efhexs.iotas.SoundIota
 import miyucomics.efhexs.misc.PlayerEntityMinterface
 import net.minecraft.entity.player.PlayerEntity
 

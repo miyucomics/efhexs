@@ -1,16 +1,13 @@
-package miyucomics.efhexs
+package miyucomics.efhexs.iotas
 
 import at.petrak.hexcasting.api.casting.iota.Iota
 import at.petrak.hexcasting.api.casting.iota.IotaType
 import at.petrak.hexcasting.api.casting.mishaps.MishapInvalidIota
 import at.petrak.hexcasting.api.casting.mishaps.MishapNotEnoughArgs
-import at.petrak.hexcasting.api.utils.asInt
 import miyucomics.efhexs.c2s.SoundC2S
 import net.minecraft.nbt.NbtElement
 import net.minecraft.nbt.NbtOps
 import net.minecraft.server.world.ServerWorld
-import net.minecraft.text.Text
-import kotlin.enums.enumEntries
 
 class SoundIota(val sound: SoundC2S) : Iota(TYPE, sound) {
 	override fun isTruthy() = true

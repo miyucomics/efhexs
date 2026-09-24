@@ -6,12 +6,8 @@ import miyucomics.efhexs.c2s.SoundC2S
 import miyucomics.efhexs.misc.RingBuffer
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs
-import net.minecraft.client.MinecraftClient
 import net.minecraft.client.particle.Particle
-import net.minecraft.client.sound.SoundInstance
 import net.minecraft.particle.ParticleEffect
-import net.minecraft.registry.Registries
-import net.minecraft.text.Text
 import net.minecraft.util.math.Vec3d
 
 object ClientState {
@@ -22,7 +18,7 @@ object ClientState {
 
 	@JvmStatic
 	fun pushParticle(type: ParticleEffect, particle: Particle) {
-		particles.add(ParticleC2S(Registries.PARTICLE_TYPE.getId(type.type)!!, Vec3d(particle.x, particle.y, particle.z), Vec3d(particle.velocityX, particle.velocityY, particle.velocityZ), particle.age, incrementingID))
+		particles.add(ParticleC2S(type.type, Vec3d(particle.x, particle.y, particle.z), Vec3d(particle.velocityX, particle.velocityY, particle.velocityZ), particle.age, incrementingID))
 		particleLookup[incrementingID] = particle
 		incrementingID += 1
 	}
